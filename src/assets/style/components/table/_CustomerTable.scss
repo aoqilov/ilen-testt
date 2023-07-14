@@ -1,0 +1,33 @@
+.customer-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.customer-role {
+  border-radius: 4px;
+  background: #e2e8f0;
+  padding: 12px 4px;
+
+  &.admin {
+    background: #0ea5e9;
+  }
+}
+
+.customer-avatar {
+  border-radius: 8px;
+  background: #f1f5f9;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  display: flex;
+  gap: 16px;
+
+  .icon {
+    cursor: pointer;
+  }
+}

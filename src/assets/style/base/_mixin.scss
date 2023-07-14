@@ -1,0 +1,71 @@
+@mixin sm {
+  @media screen and (max-width: $sm) {
+    @content;
+    .container {
+      max-width: 576px;
+    }
+  }
+}
+// 576-768
+@mixin md {
+  @media screen and (max-width: $md) {
+    @content;
+    .container {
+      max-width: 765px;
+    }
+  }
+}
+// 768-992
+@mixin lg {
+  @media screen and (max-width: $lg) {
+    @content;
+    .container {
+      max-width: 990px;
+    }
+  }
+}
+// 992-1200
+@mixin xl {
+  @media screen and (max-width: $xl) {
+    @content;
+    .container {
+      max-width: 1198px;
+    }
+  }
+}
+
+@mixin xxl {
+  @media screen and (max-width: $xxl) {
+    @content;
+    .container {
+      max-width: 1398px;
+    }
+  }
+}
+// font
+@mixin font(
+  $color: #000,
+  $font-size: 16px,
+  $line-height: 150%,
+  $font-weigth: 500
+) {
+  color: $color;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weigth;
+  font-family: "Manrope", sans-serif;
+}
+// @include font($font-blue, 16px, 20px, 800, 0, "Manrope");
+
+//
+//
+// qator kesib beruvchi
+@mixin sliceText($num: 1, $word-break: normal) {
+  display: -webkit-box !important;
+  -webkit-line-clamp: $num !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  word-break: $word-break;
+  // ishlatilishi
+  // @include sliceText(2) bosin dgani
+}

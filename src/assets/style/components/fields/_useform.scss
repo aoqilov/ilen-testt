@@ -1,0 +1,14 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  &-twice {
+    width: 100%;
+    gap: 24px;
+    display: flex;
+  }
+  &-other {
+    width: 100%;
+  }
+}

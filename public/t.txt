@@ -1,0 +1,7 @@
+<div className="header" key={customer.id}>
+            <CustomerTable
+              customer={customer}
+              onDeleteCustomer={onDeleteCustomer}
+              onEditCustomer={onEditCustomer}
+            />
+          </div>
